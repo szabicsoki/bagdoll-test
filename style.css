@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Bagdoll Regular';
+  src: url(Bagdoll-Regular.ttf);
+}
+body {
+  background-color: white;
+}
+
+.box{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.szoveg {
+  position: relative;
+
+  font-family: 'Bagdoll Regular';
+  font-weight: 100;
+  font-size: 10vh;
+  text-align: center;
+  /* font-variation-settings: 'wght' 200, 'wdth' 1, 'opsz' 1; */
+  transition: ease-in-out 0.3s;
+  border-radius: 0px;
+  color: rgb(185, 185, 185);
+}
+
+.szoveg:hover {
+  /*font-variation-settings: 'wght' 800, 'wdth' 10, 'opsz' 10;*/
+  font-size: 18vh;
+  transform: perspective(2000px) rotateY(25deg);
+  color: black;
+}
+
+.circle {
+  position: relative;
+  background-color: red;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  filter: blur(10px);
+}
